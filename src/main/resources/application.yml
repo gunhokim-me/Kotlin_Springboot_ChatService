@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: KotlinChat
+  datasource:
+    url: jdbc://localhost:3306/mysql?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  address: 0.0.0.0
+  servlet:
+    encoding:
+      force-response: true
